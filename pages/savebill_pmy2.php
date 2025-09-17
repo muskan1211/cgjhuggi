@@ -6,10 +6,8 @@ $billid = $_POST['billid'];
 $installmentno = $_POST['installmentno'];
 $installment = $_POST['installment'];
 $amount = $_POST['amount'];
-$owner = $_POST['owner'];
 
 
-$_SESSION['owner'] = $owner;
 $_SESSION['billid'] = $billid;
 $_SESSION['installmentno'] = $installmentno;
 $_SESSION['installment'] = $installment;

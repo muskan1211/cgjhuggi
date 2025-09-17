@@ -29,10 +29,7 @@ if($data) {
 
             }
             $clientid = $row['id'];
-        $query1 = "SELECT * FROM `tbl_client_variable` WHERE client_id = $clientid";
-
-        $data0 = mysqli_query($conn,$query1) or die(mysqli_error($conn));
-        $data1 = mysqli_fetch_array($data0);
+      
        
     	$tbody.=  '<tr id='.$row['id'].' bgcolor = "'.$color.'">
 			    <td>'.$x.'</td>
@@ -59,15 +56,15 @@ if($data) {
                 <td>'.$row['EXISTING_INFRA_CONDITION2'].'</td>
                 <td>'.$row['PUCCA_TOILET_AVAILAIBILITY'].'</td>
                 <td>'.$row['PROPOSED_TOILET_DRAINING'].'</td>
-                <td>'.$data1['PROPOSED_G_FLOOR_AREA'].'</td>
-                <td>'.$data1['PROPOSED_F_FLOOR_AREA'].'</td>
-                <td>'.$data1['PROPOSED_TOTAL_FLOOR_AREA'].'</td>
-                <td>'.$data1['COST_GFLOOR'].'</td>
-                <td>'.$data1['COST_FFLOOR'].'</td>
-                <td>'.$data1['COST_TOTAL'].'</td>
+                <td>'.$row['PROPOSED_G_FLOOR_AREA'].'</td>
+                <td>'.$row['PROPOSED_F_FLOOR_AREA'].'</td>
+                <td>'.$row['PROPOSED_TOTAL_FLOOR_AREA'].'</td>
+                <td>'.$row['COST_GFLOOR'].'</td>
+                <td>'.$row['COST_FFLOOR'].'</td>
+                <td>'.$row['COST_TOTAL'].'</td>
                 <td>'.$row['CENTRAL_GRANT'].'</td>
-                <td>'.$data1['STATE_SHARE'].'</td>
-                <td>'.$data1['BENEFICIARY_SHARE'].'</td>
+                <td>'.$row['STATE_SHARE'].'</td>
+                <td>'.$row['BENEFICIARY_SHARE'].'</td>
                 <td>&nbsp; &nbsp;<a class="teal-text" href="javascript:editRow('.$row['id'].');"  title="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                 <td>&nbsp; &nbsp;<a href="javascript:makeBill('.$row['id'].',\''.$row["NAME"].'\');"><i class="fa fa-user-plus" aria-hidden="true"></i></a></td>
                 <td>&nbsp; &nbsp;<a href="javascript:confirmdelete('.$row['id'].');"><i class="fa fa-times" aria-hidden="true"></i></a></td>

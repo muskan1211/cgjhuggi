@@ -537,11 +537,20 @@ table, th, td {
        
      </div>
      <div class="form-group ">
-       <select class="form-control" name="installmentno" id="installmentno">
+       <select class="form-control" name="installmentno" id="installmentno" style="margin-bottom: 10px;">
          <option value="0">Select Floor</option>
          <option value="4">G-Floor</option>
          <option value="6">G+1</option>
        </select>
+
+        <div class="form-group">
+       <select class="form-control" id="installmenttype" name="installmenttype">
+         
+         
+       </select>
+       
+       
+     </div>
        
        <script type="text/javascript">
          $('#installmentno').on("change",function(){
@@ -565,21 +574,26 @@ table, th, td {
 
           }
 
-         
+        });
 
+           $('#installmenttype').on("change",function(){
+
+          var i = $('#installmenttype').val();
+          var amount = 0;
+
+          switch(i) {
+            case 'DISMANTLED/PLINTH' : amount = 63000; break;
+            case 'LINTEL' : amount = 87000; break;
+            case 'SLAB' : amount = 65000; break;
+            case 'COMPLETION' : amount = 35000; break;
+          }
+
+          $('#amount').val(amount);
            
 
          });
           
        </script>
-     </div>
-     <div class="form-group">
-       <select class="form-control" id="installmenttype" name="installmenttype">
-         
-         
-       </select>
-       
-       
      </div>
      
      <div class="form-group ">

@@ -140,7 +140,7 @@ STRUCTURE REPAIR REHABILATION,WATER PROOFING SYSTEMS,SELANTS FLOORINGS & MATERIA
 					</div><br>
 			<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 text-center">
-            With above ref & subject the underconstruction residential house &nbsp;&nbsp;<b><?php echo $_SESSION['installment']; ?></b>
+            With above ref & subject the underconstruction residential house <b><?php echo $_SESSION['installment']; ?></b>
                     &nbsp;&nbsp;level as the site has been supervised<br><br>
 			</div>
 			</div>
@@ -427,9 +427,9 @@ uLrh iath;u dza&
             </table>
                    
                          
-                <span style="margin-left: 100px;font-size: 20px;"> mijksDrkuqlkj okLrqfon~ }kjk fd;s x, ft;ksVSx vuqlkj fgrxzkgh }kjk vc rd <span style="font-family: Calibri Light;font-size:20px;">(G/G+1) </span> ds ------------------------------ Lrj rd ds fuekZ.kk/khu vkokl dk dk;Z iq.kZ dj fy;k x;k gs A ftlds vuqlkj fgrxzkgh dks fn, tkus okys Hkqxrku jkf'k dk fooj.k fuEukuqlkj gS&</span>
+                <span style="margin-left: 100px;font-size: 20px;"> mijksDrkuqlkj okLrqfon~ }kjk fd;s x, ft;ksVSx vuqlkj fgrxzkgh }kjk vc rd <span style="font-family: Calibri Light;font-size:20px;">(G/G+1) </span> ds <?php echo '<span style="font-family: Calibri Light">'.$_SESSION['installment'].'</span>'; ?> Lrj rd ds fuekZ.kk/khu vkokl dk dk;Z iq.kZ dj fy;k x;k gs A ftlds vuqlkj fgrxzkgh dks fn, tkus okys Hkqxrku jkf'k dk fooj.k fuEukuqlkj gS&</span>
                 <br>
-                <span style="margin-left: 5px;font-size: 20px;">    vr% ----------------------------     fdLr dh jkf'k : <?php
+                <span style="margin-left: 5px;font-size: 20px;">    vr% <?php echo '<span style="font-family: Calibri Light">'.$_SESSION['installment'].'</span>'; ?>    fdLr dh jkf'k : <?php
 
                         if($_SESSION['amount']==''){
 
@@ -473,7 +473,7 @@ function myFunction() {
 
 }
 function myFunctioncancel() {
-    window.location="report.php";
+    window.location="pmy2report.php";
 }
 function saveonly(){
 
