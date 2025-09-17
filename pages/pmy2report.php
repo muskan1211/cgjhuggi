@@ -1,10 +1,9 @@
 <?php include 'header.php';
 
-unset($_SESSION['owner']);
-unset($_SESSION['billid']);
-unset($_SESSION['installmentno']);
-unset($_SESSION['installment']);
-unset($_SESSION['amount']);
+unset($_SESSION['billid_pmy2']);
+unset($_SESSION['installmentno_pmy2']);
+unset($_SESSION['installment_pmy2']);
+unset($_SESSION['amount_pmy2']);
    include('db.php');
 	
   if(isset($_SESSION['billid'])){

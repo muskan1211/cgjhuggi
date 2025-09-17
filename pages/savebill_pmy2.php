@@ -8,10 +8,10 @@ $installment = $_POST['installment'];
 $amount = $_POST['amount'];
 
 
-$_SESSION['billid'] = $billid;
-$_SESSION['installmentno'] = $installmentno;
-$_SESSION['installment'] = $installment;
-$_SESSION['amount'] = $amount;
+$_SESSION['billid_pmy2'] = $billid;
+$_SESSION['installmentno_pmy2'] = $installmentno;
+$_SESSION['installment_pmy2'] = $installment;
+$_SESSION['amount_pmy2'] = $amount;
 
 $query1 = "SELECT tbl_client_pmy2.CITY FROM tbl_client_pmy2 WHERE  tbl_client_pmy2.id = $billid";
 

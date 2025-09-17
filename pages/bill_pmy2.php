@@ -16,7 +16,7 @@ $getuser = mysqli_fetch_array($data1);
 
  $date=date('d-m-y'); 
 
-   $installment_data = $_SESSION['installment'];
+   $installment_data = $_SESSION['installment_pmy2'];
    $installment_no = 1;
    $i=0;
     
@@ -140,7 +140,7 @@ STRUCTURE REPAIR REHABILATION,WATER PROOFING SYSTEMS,SELANTS FLOORINGS & MATERIA
 					</div><br>
 			<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 text-center">
-            With above ref & subject the underconstruction residential house <b><?php echo $_SESSION['installment']; ?></b>
+            With above ref & subject the underconstruction residential house <b><?php echo $_SESSION['installment_pmy2']; ?></b>
                     &nbsp;&nbsp;level as the site has been supervised<br><br>
 			</div>
 			</div>
@@ -185,7 +185,7 @@ STRUCTURE REPAIR REHABILATION,WATER PROOFING SYSTEMS,SELANTS FLOORINGS & MATERIA
                 <b>CARPET AREA FF <span style="margin-left: 120px;"><?php echo $getuser['PROPOSED_F_FLOOR_AREA']; ?></span></b>
                 </li>
                 <li class="list-group-item">
-                <b>AMOUNT<span style="margin-left: 185px;"><?php echo $_SESSION['amount'];  ?></span></b> 
+                <b>AMOUNT<span style="margin-left: 185px;"><?php echo $_SESSION['amount_pmy2'];  ?></span></b> 
                 </li>
 
               </ul>
@@ -322,8 +322,7 @@ fgrxzkgh o fuekZ.kk/khu vkokl dk fooj.k%&
             <table class="table-bordered" style="width:100%">
                 
                 <tr>
-                    <td colspan="2">1-  edku dk dqy ykxr jkf'k      & : 
-                    <?php echo '<span style="font-family: Calibri Light;font-size:15px;"><b>'.$getuser['COST_TOTAL'].'</b></span>'; ?> </td>
+                    <td colspan="2">1-  edku dk dqy ykxr jkf'k      & : 350000 </td>
                 </tr>
                 <tr>
                     <td colspan="2"> 2- dqy vuqnku jkf'k  & : 282850</td>
@@ -427,16 +426,16 @@ uLrh iath;u dza&
             </table>
                    
                          
-                <span style="margin-left: 100px;font-size: 20px;"> mijksDrkuqlkj okLrqfon~ }kjk fd;s x, ft;ksVSx vuqlkj fgrxzkgh }kjk vc rd <span style="font-family: Calibri Light;font-size:20px;">(G/G+1) </span> ds <?php echo '<span style="font-family: Calibri Light">'.$_SESSION['installment'].'</span>'; ?> Lrj rd ds fuekZ.kk/khu vkokl dk dk;Z iq.kZ dj fy;k x;k gs A ftlds vuqlkj fgrxzkgh dks fn, tkus okys Hkqxrku jkf'k dk fooj.k fuEukuqlkj gS&</span>
+                <span style="margin-left: 100px;font-size: 20px;"> mijksDrkuqlkj okLrqfon~ }kjk fd;s x, ft;ksVSx vuqlkj fgrxzkgh }kjk vc rd <span style="font-family: Calibri Light;font-size:20px;">(G/G+1) </span> ds <?php echo '<span style="font-family: Calibri Light">'.$_SESSION['installment_pmy2'].'</span>'; ?> Lrj rd ds fuekZ.kk/khu vkokl dk dk;Z iq.kZ dj fy;k x;k gs A ftlds vuqlkj fgrxzkgh dks fn, tkus okys Hkqxrku jkf'k dk fooj.k fuEukuqlkj gS&</span>
                 <br>
-                <span style="margin-left: 5px;font-size: 20px;">    vr% <?php echo '<span style="font-family: Calibri Light">'.$_SESSION['installment'].'</span>'; ?>    fdLr dh jkf'k : <?php
+                <span style="margin-left: 5px;font-size: 20px;">    vr% <?php echo '<span style="font-family: Calibri Light">'.$_SESSION['installment_pmy2'].'</span>'; ?>    fdLr dh jkf'k : <?php
 
-                        if($_SESSION['amount']==''){
+                        if($_SESSION['amount_pmy2']==''){
 
                             $amount_data = '----------------------------------------';
                         }
                         else {
-                            $amount_data = $_SESSION['amount'];
+                            $amount_data = $_SESSION['amount_pmy2'];
                         }
                  echo '<span style="font-family: Calibri Light">'.$amount_data.'</span>'; ?> Hkqxrku dh Lohd``fr gsrq izLrqr gSA Hkqxrku <span style="font-family: Calibri Light">SNA</span> Li'kZ ds ek/;e ls fd;k tkuk gS A</span>
                  <br>
