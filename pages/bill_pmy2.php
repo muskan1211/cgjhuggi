@@ -56,6 +56,15 @@ $getuser = mysqli_fetch_array($data1);
 			display: none;
 		}
 
+  /* Hide headers and footers */
+  header, footer {
+    display: none !important; 
+  }
+
+  /* Control page margins to reduce space where URL might appear */
+  @page {
+    margin: 1px; /* Or a small margin like 8mm */
+  }
 
 }
 	@media print,screen {
@@ -107,9 +116,9 @@ $getuser = mysqli_fetch_array($data1);
 			<div class="header"><center><h2>AVINASH JAIN</h2>
 			<h4>CONSULTANT DURG&nbsp;&nbsp;BHILAI MUNICIPAL CORPORATION</h4>
 			<h5>REGISTERED CIVIL ENGINEER PUBLIC WORKS DEPARTMENT,WATER RESOURCES DEPARTMENT<br><br>
-STRUCTURE REPAIR REHABILATION,WATER PROOFING SYSTEMS,SELANTS FLOORINGS & MATERIALS</h5> </center></div><br>
-<div class="row">
-						<div class="col-xs-8 col-sm-8 col-md-8 text-left">
+STRUCTURE REPAIR REHABILATION,WATER PROOFING SYSTEMS,SELANTS FLOORINGS & MATERIALS</h5> </center></div><br><br>
+<div class="row ml-4" style="margin-left:60px;">
+						<div class="col-xs-8 col-sm-8 col-md-8">
 						<div class="receipt-left">
 				
                 <p>To.<br>THE NODAL OFFICER<br>PRADHAN MANTRI AAWAS YOJNA<br>BHILAI MUNICIPAL CORPORATION,BHILAI
@@ -146,7 +155,7 @@ STRUCTURE REPAIR REHABILATION,WATER PROOFING SYSTEMS,SELANTS FLOORINGS & MATERIA
 			</div>
 			<div class="row">
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="align-content: center;">
+				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="align-content: center;font-size:12px;">
 					 <ul class="list-group list-group-unbordered">
                 <li class="list-group-item">
                   <b>NAME OF BENEFICIARY:<span style="margin-left: 50px;"><?php echo $getuser['NAME'];?></span>
@@ -160,7 +169,7 @@ STRUCTURE REPAIR REHABILATION,WATER PROOFING SYSTEMS,SELANTS FLOORINGS & MATERIA
                 <li class="list-group-item">
                 <b>MOBILE NO <span style="margin-left: 145px;"><?php echo $getuser['MOB_NO']; ?></span></b>
                 </li>
-                <li class="list-group-item">
+                 <li class="list-group-item">
                 <b>ADDRESS<span style="margin-left: 150px;"><?php echo $getuser['ADDRESS']; ?></span></b> 
                 </li>
                 <li class="list-group-item">
@@ -196,19 +205,19 @@ STRUCTURE REPAIR REHABILATION,WATER PROOFING SYSTEMS,SELANTS FLOORINGS & MATERIA
 					<b>Geotagging Status :</b>
 				</div>
 			</div><br>
-			<div class="footer text-center" >
+			<div class="footer text-center" style="font-size:15px;">
 				<b>OFFICE : BESIDE MAINTENANCE OFFICE,SECTOR 10,BHILAI,(C.G) PIN : 490006
                           <br>RESIDENCE: BHATT COLONY,MOHAN NAGAR,DURG,(C.G) PIN : 491001<br>
                                  CONTACT : 9630868978,9826607119,0788-2216777<br>
                           Email : nmnbhtt91@gmail.com</b>
-			</div><br>
+			</div><br><br>
 		<div class="notesheet">
 
                  <div class="row"><span style="font-family: 'Kruti Dev 010', sans-serif;font-size: 30px;">
                     <center><b>dk;kZy;] uxj ikfyd fuxe fHkykbZ] ftyk &nqxZ-</b></center>
-                    
-                    <center><u><b><span style="font-size: 24px;">uksV'khV</span></b></u></center>
-                    
+                    <div style="border-top: 2px solid black; width: 100%;"></div>
+                    <center><b><span style="font-size: 24px;">uksV'khV</span></b></center>
+                    <div style="border-top: 2px solid black; width: 100%;"></div>
                     <div class="row">
                         <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"></div>
                         <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
@@ -223,15 +232,14 @@ uLrh iath;u dza&        <br>
                         
 
                     </div>
-            --------------------------------------------------------------------------------------------------------------------------------------
-                    <div class="row" style="margin: 2px;font-size: 18px;">
+                   <div style="border-top: 2px dashed black; width: 100%;margin-left:10px;margin-top:30px;margin-bottom:30px;"></div>
+                     <div class="row" style="margin: 2px;font-size: 18px;">
                     <div class="col-lg-2 col-md-2 col-xs-2">
             <b>fo"k;&   </b></div><div class="col-lg-10 col-md-10 col-xs-10"><span style="margin-left: 10px;"><span style="font-family: Calibri Light"><b>PMAY 2.0</b> </span><span style="font-family: 'Kruti Dev 010', sans-serif;">ds </span><span style="font-family: Calibri Light"><b>BLC </b></span></span>      <span style="font-family: 'Kruti Dev 010', sans-serif;font-size: 20px;">    ?kVd varxZr fgrxzkgh Jh@Jherh <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['NAME'].'</b></span>'; ?>                   firk@ifr dk uke <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['F_NAME'].'</b></span>'; ?> 
                 okMZ dzekad <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['WARD_NO'].'</b></span>'; ?> okMZ dk uke----------------------------    ?kVd varxZr                                }kjk fuekZ.k fd;s tk jgs vkokl gsrq  vuqnku jkf'k ds Hkqxrku fd;s tkus ckcr~A
          </span></div>
                     </div>
-            --------------------------------------------------------------------------------------------------------------------------
-            <div class="row">
+                      <div style="border-top: 2px dashed black; width: 100%;margin-left:10px;margin-top:20px;margin-bottom:15px;"></div>   <div class="row">
                 
                 <div class="col-lg-1 col-md-1 col-xs-1"></div>
                 <div class="col-lg-9 col-md-9 col-xs-9" style="font-size: 18px;border-left: solid 2px;border-right: solid 2px;">
@@ -350,10 +358,11 @@ fgrxzkgh o fuekZ.kk/khu vkokl dk fooj.k%&
             </div>
 
             
-            <div class="row"><br><span style="font-family: 'Kruti Dev 010', sans-serif;font-size: 30px;">
-                    <center><h3><b>dk;kZy;] uxj ikfyd fuxe fHkykbZ] ftyk &nqxZ-</b></h3></center>
-                    
-                    <center><b><span style="font-size: 20px;">uksV'khV</span></b></center>
+            <div class="row"><br><br><span style="font-family: 'Kruti Dev 010', sans-serif;font-size: 30px;">
+                    <center><b>dk;kZy;] uxj ikfyd fuxe fHkykbZ] ftyk &nqxZ-</b></center>
+                    <div style="border-top: 2px solid black; width: 100%;"></div>
+                    <center><b><span style="font-size: 24px;">uksV'khV</span></b></center>
+                    <div style="border-top: 2px solid black; width: 100%;"></div>
                     
                     <div class="row">
                         <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"></div>
@@ -368,16 +377,14 @@ uLrh iath;u dza&
                         </div>
                         
 
-                    </div>
-                ---------------------------------------------------------------------------------------------------------------------------------------
-                    <div class="row" style="margin: 3px;font-size: 18px;">
+                    </div>  <div style="border-top: 2px dashed black; width: 100%;margin-left:10px;margin-top:30px;margin-bottom:30px;"></div>
+                      <div class="row" style="margin: 3px;font-size: 18px;">
                     <div class="col-lg-2 col-md-2 col-xs-2">
             <b>&nbsp;&nbsp;fo"k;&   </b></div><div class="col-lg-10 col-md-10 col-xs-10"><span style="margin-left: 10px;"><span style="font-family: Calibri Light"><b>PMAY</b> </span><span style="font-family: 'Kruti Dev 010', sans-serif;">ds </span><span style="font-family: Calibri Light"><b>BLC</b> </span></span>      <span style="font-family: 'Kruti Dev 010', sans-serif;font-size: 20px;">    ?kVd varxZr fgrxzkgh Jh@Jherh <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['NAME'].'</b></span>'; ?>                   firk@ifr dk uke <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['F_NAME'].'</b></span>'; ?> 
                 okMZ dzekad <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['WARD_NO'].'</b></span>'; ?> okMZ dk uke----------------------------          ?kVd varxZr                          }kjk fuekZ.k fd;s tk jgs vkokl gsrq  vuqnku jkf'k ds Hkqxrku fd;s tkus ckcr~A
          </span></div>
                     </div>
-            --------------------------------------------------------------------------------------------------------------------------------------
-            <div class="row">
+                      <div style="border-top: 2px dashed black; width: 100%;margin-left:10px;margin-top:30px;margin-bottom:30px;"></div> <div class="row">
                 <div class="col-lg-2 col-md-2 col-xs-2"></div>
                 <div class="col-lg-8 col-md-8 col-xs-8" style="border-left:solid black 2px;border-right:solid black 2px;height: 650px;">
 
@@ -426,9 +433,9 @@ uLrh iath;u dza&
             </table>
                    
                          
-                <span style="margin-left: 100px;font-size: 20px;"> mijksDrkuqlkj okLrqfon~ }kjk fd;s x, ft;ksVSx vuqlkj fgrxzkgh }kjk vc rd <span style="font-family: Calibri Light;font-size:20px;">(G/G+1) </span> ds <?php echo '<span style="font-family: Calibri Light">'.$_SESSION['installment_pmy2'].'</span>'; ?> Lrj rd ds fuekZ.kk/khu vkokl dk dk;Z iq.kZ dj fy;k x;k gs A ftlds vuqlkj fgrxzkgh dks fn, tkus okys Hkqxrku jkf'k dk fooj.k fuEukuqlkj gS&</span>
+                <div style="margin-left: 10px;font-size: 20px;"> mijksDrkuqlkj okLrqfon~ }kjk fd;s x, ft;ksVSx vuqlkj fgrxzkgh }kjk vc rd <span style="font-family: Calibri Light;font-size:20px;">(G/G+1) </span> ds <?php echo '<span style="font-family: Calibri Light;font-size:20px;">'.$_SESSION['installment_pmy2'].'</span>'; ?> Lrj rd ds fuekZ.kk/khu vkokl dk dk;Z iq.kZ dj fy;k x;k gs A ftlds vuqlkj fgrxzkgh dks fn, tkus okys Hkqxrku jkf'k dk fooj.k fuEukuqlkj gS&</div>
                 <br>
-                <span style="margin-left: 5px;font-size: 20px;">    vr% <?php echo '<span style="font-family: Calibri Light">'.$_SESSION['installment_pmy2'].'</span>'; ?>    fdLr dh jkf'k : <?php
+                <div style="margin-left: 10px;font-size: 20px;">    vr% <?php echo '<span style="font-family: Calibri Light;font-size:20px">'.$_SESSION['installment_pmy2'].'</span>'; ?>    fdLr dh jkf'k : <?php
 
                         if($_SESSION['amount_pmy2']==''){
 
@@ -437,11 +444,11 @@ uLrh iath;u dza&
                         else {
                             $amount_data = $_SESSION['amount_pmy2'];
                         }
-                 echo '<span style="font-family: Calibri Light">'.$amount_data.'</span>'; ?> Hkqxrku dh Lohd``fr gsrq izLrqr gSA Hkqxrku <span style="font-family: Calibri Light">SNA</span> Li'kZ ds ek/;e ls fd;k tkuk gS A</span>
+                 echo '<span style="font-family: Calibri Light">'.$amount_data.'</span>'; ?> Hkqxrku dh Lohd``fr gsrq izLrqr gSA Hkqxrku <span style="font-family: Calibri Light">SNA</span> Li'kZ ds ek/;e ls fd;k tkuk gS A</div>
                  <br>
                  <span style="float: right;font-size: 20px;"><b>
                     lh,yVhlh fo'ks"kK </b></span>
-                <br>
+                <br><br>
                 <span style="margin-left: 5px;font-size: 20px;"><b>lgk;d vfHk;ark</b></span>
                 <span style="float: right;font-size: 20px;"><b>mi vfHk;ark</b></span>
 
@@ -465,7 +472,7 @@ uLrh iath;u dza&
 </html>
 <script>
 function myFunction() {
-	$.post("savebillfinal.php",function(data){
+	$.post("savebillfinal_pmy2.php",function(data){
 		
 	});
   window.print();

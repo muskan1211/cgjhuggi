@@ -4,7 +4,7 @@ include 'db.php';
 
 $billid = $_POST['billid'];
 $installmentno = $_POST['installmentno'];
-$installment = $_POST['installment'];
+$installment = $_POST['installmenttype'];
 $amount = $_POST['amount'];
 
 

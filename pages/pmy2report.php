@@ -558,7 +558,7 @@ table, th, td {
 
            if(i==4){
 
-            var str = '<option value="0">Select Description</option><option value="DISMANTLED/PLINTH">DISMANTLED/PLINTH</option><option value="LINTEL">LINTEL</option><option value="SLAB">SLAB</option><option value="COMPLETION">COMPLETION</option>';
+            var str = '<option value="0">Select Description</option><option value="FOUNDATION/PLINTH">FOUNDATION/PLINTH</option><option value="LINTEL">LINTEL</option><option value="SLAB">SLAB</option><option value="COMPLETION">COMPLETION</option>';
 
             $('#installmenttype').empty().append(str);
 
@@ -566,7 +566,7 @@ table, th, td {
           }
           else if(i==6) {
 
-              var str = '<option value="0">Select Floor</option><option value="DISMANTLED/PLINTH">DISMANTLED/PLINTH</option><option value="GFLOOR_LINTEL">GFLOOR_LINTEL</option><option value="GFLOOR_SLAB">GFLOOR_SSLAB</option><option value="FFLOOR_LINTEL">FFLOOR_LINTEL</option><option value="FFLOOR_SLAB">FFLOOR_SLAB</option><option value="COMPLETION">COMPLETION</option>';
+              var str = '<option value="0">Select Floor</option><option value="FOUNDATION/PLINTH">FOUNDATION/PLINTH</option><option value="GFLOOR_LINTEL">GFLOOR_LINTEL</option><option value="GFLOOR_SLAB">GFLOOR_SSLAB</option><option value="FFLOOR_LINTEL">FFLOOR_LINTEL</option><option value="FFLOOR_SLAB">FFLOOR_SLAB</option><option value="COMPLETION">COMPLETION</option>';
 
             $('#installmenttype').empty().append(str); 
 
@@ -581,7 +581,7 @@ table, th, td {
           var amount = 0;
 
           switch(i) {
-            case 'DISMANTLED/PLINTH' : amount = 63000; break;
+            case 'FOUNDATION/PLINTH' : amount = 63000; break;
             case 'LINTEL' : amount = 87000; break;
             case 'SLAB' : amount = 65000; break;
             case 'COMPLETION' : amount = 35000; break;
