@@ -28,6 +28,18 @@ $getuser = mysqli_fetch_array($data1);
      		$installment_no++;
      	}
      }
+     $payment_number = '';
+     $payment_for = '';
+
+     switch($installment_data)
+     {
+        case 'FOUNDATION/PLINTH' : $payment_number = 'izFke'; $payment_for = "QkmaMs'ku" ;break;
+        case 'GFLOOR_LINTEL' :$payment_number = 'f}rh;'; $payment_for = 'NTtk fyaVy Nr fuekZ.k' ;break;
+        case 'GFLOOR_SSLAB' : $payment_number = '`rh;';$payment_for = 'Hkwry Nr fuekZ.k ' ;break;
+        case 'FFLOOR_LINTEL' :$payment_number = 'f}rh;'; $payment_for = 'Hkwry Nr fuekZ.k' ;break;
+        case 'FFLOOR_SLAB' : $payment_number = 'r`rh;';$payment_for = 'izFke ry Nr fuekZ.k' ;break;
+        case 'COMPLETION' :$payment_number = 'prqFkZ'; $payment_for = 'dk;Z iw.kZ gksus ij' ;break;
+     }
 
 
 
@@ -243,8 +255,8 @@ uLrh iath;u dza&        <br>
                    <div style="border-top: 2px solid black; width: 100%;margin-left:10px;"></div>
                      <div class="row mx-4" style="margin: 2px;font-size: 18px;">
                     
-            <b>fo"k;&   </b><span style="margin-left: 10px;"><span style="font-family: Calibri Light"><b>PMAY 2.0</b> </span><span style="font-family: 'Kruti Dev 010', sans-serif;">ds </span><span style="font-family: Calibri Light"><b>BLC </b></span></span>      <span style="font-family: 'Kruti Dev 010', sans-serif;font-size: 20px;">    ?kVd varxZr fgrxzkgh Jh@Jherh <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['NAME'].'</b></span>'; ?>                   firk@ifr dk uke <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['F_NAME'].'</b></span>'; ?> 
-                okMZ dzekad <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['WARD_NO'].'</b></span>'; ?> okMZ dk uke----------------------------    ?kVd varxZr                                }kjk fuekZ.k fd;s tk jgs vkokl gsrq  vuqnku jkf'k ds Hkqxrku fd;s tkus ckcr~A
+            <b>fo"k;&   </b><span style="margin-left: 10px;"><span style="font-family: Times New Roman"><b>PMAY 2.0</b> </span><span style="font-family: 'Kruti Dev 010', sans-serif;">ds </span><span style="font-family: Times New Roman"><b>BLC </b></span></span>      <span style="font-family: 'Kruti Dev 010', sans-serif;font-size: 20px;">    ?kVd varxZr fgrxzkgh Jh@Jherh <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['NAME'].'</b></span>'; ?>                   firk@ifr dk uke <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['F_NAME'].'</b></span>'; ?> 
+                okMZ dzekad <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['WARD_NO'].'</b></span>'; ?> okMZ dk uke----------------------------    ?kVd varxZr                                }kjk fuekZ.k fd;s tk jgs vkokl gsrq  vuqnku jkf'k ds Hkqxrku fd;s tkus ckcr~A
          </span>
                     </div>
                       <div style="border-top: 2px solid black; width: 100%;margin-left:10px;"></div> 
@@ -252,7 +264,7 @@ uLrh iath;u dza&        <br>
                 
               
                 <div class="col-lg-12 col-md-12 col-xs-12" style="font-size: 18px;border-left: solid 2px;border-right: solid 2px;">
-                              d`i;k izdj.k dk voyksdu djsaxsA bl dk;kZy; }kjk iznku dh xbZ Hkou vuqKk dz0-------------ds vuqlkj okMZ dz  <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['WARD_NO'].'</b></span>'; ?> okMZ dk uke ------------------------------------ls Jh@Jherh  <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['NAME'].'</b></span>'; ?> firk@ifr Jh  <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['F_NAME'].'</b></span>'; ?> }kjk <span style="font-family: Calibri Light"><b>PMAY 2.0</b></span> ds <span style="font-family: Calibri Light"><b>BLC</b></span> ?kVd varxZr Lo;a }kjk vkokl fuekZ.k dk dk;Z izkjaHk fd;k x;k gSA ftldk lwph esa ljy uEcj-------------gSA vkokl fuekZ.k dk;Z ds fujh{k.k gsrq vf/kd``r okLrqfon@baftfu;j }kjk  dk;Z dk fujh{k.k izek.k i=  ,oa QksVksxzk¶l @ ft;ks Vsx dk dk;Z dk  izek.k i= izLrqr fd;k x;k gS  tks fd uLrh esa layXu gS A
+                              d`i;k izdj.k dk voyksdu djsaxsA bl dk;kZy; }kjk iznku dh xbZ Hkou vuqKk dz0-------------ds vuqlkj okMZ dz  <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['WARD_NO'].'</b></span>'; ?> okMZ dk uke ------------------------------------ls Jh@Jherh  <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['NAME'].'</b></span>'; ?> firk@ifr Jh  <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['F_NAME'].'</b></span>'; ?> }kjk <span style="font-family: Times New Roman"><b>PMAY 2.0</b></span> ds <span style="font-family: Times New Roman"><b>BLC</b></span> ?kVd varxZr Lo;a }kjk vkokl fuekZ.k dk dk;Z izkjaHk fd;k x;k gSA ftldk lwph esa ljy uEcj-------------gSA vkokl fuekZ.k dk;Z ds fujh{k.k gsrq vf/kd``r okLrqfon@baftfu;j }kjk  dk;Z dk fujh{k.k izek.k i=  ,oa QksVksxzk¶l @ ft;ks Vsx dk dk;Z dk  izek.k i= izLrqr fd;k x;k gS  tks fd uLrh esa layXu gS A
 izdj.k esa vc rd fdlh Hkh izdkj dk nLrkosth f'kdk;r@ fookn ugha gS A
 fgrxzkgh o fuekZ.kk/khu vkokl dk fooj.k%&
 
@@ -260,26 +272,26 @@ fgrxzkgh o fuekZ.kk/khu vkokl dk fooj.k%&
         <tr>
             <td style="width: 23px;border-left: 2px;">1-</td>
             <td style="width: 265px;border-left: 2px;">fgrxzkgh dk uke</td>
-            <td style="width: 398px;border-left: 2px;">Jh@Jherh <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['NAME'].'</b></span>'; ?></td>
+            <td style="width: 398px;border-left: 2px;">Jh@Jherh <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['NAME'].'</b></span>'; ?></td>
 
         </tr>
         <tr>
             <td style="width: 23px;border-left: 2px;">2-</td>
             <td style="width: 265px;border-left: 2px;">ifr@firk dk uke</td>
-            <td style="width: 398px;border-left: 2px;">Jh@Jherh <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['F_NAME'].'</b></span>'; ?></td>
+            <td style="width: 398px;border-left: 2px;">Jh@Jherh <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['F_NAME'].'</b></span>'; ?></td>
 
         </tr>
         
         <tr>
             <td style="width: 23px;border-left: 2px;">3-</td>
             <td style="width: 265px;border-left: 2px;">vk/kkj dkMZ ua-</td>
-            <td style="width: 398px;border-left: 2px;">&nbsp;&nbsp; <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['ADHAR_NO'].'</b></span>'; ?></td>
+            <td style="width: 398px;border-left: 2px;">&nbsp;&nbsp; <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['ADHAR_NO'].'</b></span>'; ?></td>
 
         </tr>
         <tr>
             <td style="width: 23px;border-left: 2px;">4-</td>
             <td style="width: 265px;border-left: 2px;">cSad [kkrk dz-</td>
-            <td style="width: 398px;border-left: 2px;">&nbsp;&nbsp; <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['ACC_NO'].'</b></span>'; ?></td>
+            <td style="width: 398px;border-left: 2px;">&nbsp;&nbsp; <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['ACC_NO'].'</b></span>'; ?></td>
 
         </tr>
         <tr>
@@ -287,19 +299,19 @@ fgrxzkgh o fuekZ.kk/khu vkokl dk fooj.k%&
             <td style="width: 265px;border-left: 2px;">Lohd`r dkWjisV {ks=Qy</td>
             <td style="width: 398px;border-left: 2px;">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-xs-6">Hkwry &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    & <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['PROPOSED_G_FLOOR_AREA'].'</b></span>'; ?></div>
+                    <div class="col-lg-6 col-md-6 col-xs-6">Hkwry &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    & <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['PROPOSED_G_FLOOR_AREA'].'</b></span>'; ?></div>
                     <div class="col-lg-6 col-md-6 col-xs-6">oxZehVj</div>
 
                     
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-xs-6">izFke ry &nbsp;&nbsp; & <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['PROPOSED_F_FLOOR_AREA'].'</b></span>'; ?></div>
+                    <div class="col-lg-6 col-md-6 col-xs-6">izFke ry &nbsp;&nbsp; & <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['PROPOSED_F_FLOOR_AREA'].'</b></span>'; ?></div>
                     <div class="col-lg-6 col-md-6 col-xs-6">oxZehVj</div>
 
                     
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-xs-6">dqy   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   & <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['PROPOSED_TOTAL_FLOOR_AREA'].'</b></span>'; ?></div>
+                    <div class="col-lg-6 col-md-6 col-xs-6">dqy   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   & <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['PROPOSED_TOTAL_FLOOR_AREA'].'</b></span>'; ?></div>
                     <div class="col-lg-6 col-md-6 col-xs-6">oxZehVj</div>
 
                     
@@ -314,7 +326,7 @@ fgrxzkgh o fuekZ.kk/khu vkokl dk fooj.k%&
             <td style="width: 398px;border-left: 2px;">: <?php 
 
             $val = (floatval($getuser['STATE_SHARE'])+floatval($getuser['CENTRAL_GRANT']));
-            echo '<span style="font-family: Calibri Light;"><b>'.$val.'</b></span>'; ?></td>
+            echo '<span style="font-family: Times New Roman;"><b>'.$val.'</b></span>'; ?></td>
 
         </tr>
 
@@ -324,7 +336,7 @@ fgrxzkgh o fuekZ.kk/khu vkokl dk fooj.k%&
             <td style="width: 398px;border-left: 2px;">: <?php 
 
             $val = (floatval($getuser['STATE_SHARE'])+floatval($getuser['CENTRAL_GRANT']));
-            echo '<span style="font-family: Calibri Light;"><b>'.$val.'</b></span>'; ?></td>
+            echo '<span style="font-family: Times New Roman;"><b>'.$val.'</b></span>'; ?></td>
 
         </tr>
     </table><b>
@@ -345,13 +357,13 @@ fgrxzkgh o fuekZ.kk/khu vkokl dk fooj.k%&
                     <td colspan="2"> 2- dqy vuqnku jkf'k  & : 282850</td>
                 </tr>
                 <tr>
-                    <td colspan="2"> <span style="font-family: Calibri Light;font-size:15px;">2.1</span>-  dsUnzka'k jkf'k :0 <?php echo '<span style="font-family: Calibri Light;font-size:15px;"><b>150000.00</b></span>'; ?></td>
+                    <td colspan="2"> <span style="font-family: Times New Roman;font-size:15px;">2.1</span>-  dsUnzka'k jkf'k :0 <?php echo '<span style="font-family: Times New Roman;font-size:15px;"><b>150000.00</b></span>'; ?></td>
                 </tr>
                  <tr>
-                    <td colspan="2"><span style="font-family: Calibri Light;font-size:15px;">2.2</span>-  jkT;ka'k jkf'k     & : <?php echo '<span style="font-family: Calibri Light;font-size:15px;"><b>100000</b></span>'; ?></td>
+                    <td colspan="2"><span style="font-family: Times New Roman;font-size:15px;">2.2</span>-  jkT;ka'k jkf'k     & : <?php echo '<span style="font-family: Times New Roman;font-size:15px;"><b>100000</b></span>'; ?></td>
                 </tr>
                  <tr>
-                    <td colspan="2"> <span style="font-family: Calibri Light;font-size:15px;">2.3</span>-  eq[;ea=h x`g izos'k lEeku ;kstuk gsrq vfrfjDr jkT;ka'k jkf'k  & :0 <?php echo '<span style="font-family: Calibri Light;font-size:15px;"><b>32850.00</b></br>( 18 </span>'; ?> ekg ds Hkhrj vkokl iq.kZ djus dh 'krZ ij <span style="font-family: Calibri Light;font-size:15px;"> )</span></td>
+                    <td colspan="2"> <span style="font-family: Times New Roman;font-size:15px;">2.3</span>-  eq[;ea=h x`g izos'k lEeku ;kstuk gsrq vfrfjDr jkT;ka'k jkf'k  & :0 <?php echo '<span style="font-family: Times New Roman;font-size:15px;"><b>32850.00</b></br>( 18 </span>'; ?> ekg ds Hkhrj vkokl iq.kZ djus dh 'krZ ij <span style="font-family: Times New Roman;font-size:15px;"> )</span></td>
                 </tr>
             </table>
 
@@ -389,8 +401,8 @@ uLrh iath;u dza&
                     </div>  <div style="border-top: 2px solid black; width: 100%;margin-left:10px"></div>
                       <div class="row mx-4" style="margin:2px;font-size: 18px;">
                    
-            <b>&nbsp;&nbsp;fo"k;&   </b><span style="margin-left: 10px;"><span style="font-family: Calibri Light"><b>PMAY</b> </span><span style="font-family: 'Kruti Dev 010', sans-serif;">ds </span><span style="font-family: Calibri Light"><b>BLC</b> </span></span>      <span style="font-family: 'Kruti Dev 010', sans-serif;font-size: 20px;">    ?kVd varxZr fgrxzkgh Jh@Jherh <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['NAME'].'</b></span>'; ?>                   firk@ifr dk uke <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['F_NAME'].'</b></span>'; ?> 
-                okMZ dzekad <?php echo '<span style="font-family: Calibri Light"><b>'.$getuser['WARD_NO'].'</b></span>'; ?> okMZ dk uke----------------------------------          ?kVd varxZr                          }kjk fuekZ.k fd;s tk jgs vkokl gsrq  vuqnku jkf'k ds Hkqxrku fd;s tkus ckcr~A
+            <b>&nbsp;&nbsp;fo"k;&   </b><span style="margin-left: 10px;"><span style="font-family: Times New Roman"><b>PMAY</b> </span><span style="font-family: 'Kruti Dev 010', sans-serif;">ds </span><span style="font-family: Times New Roman"><b>BLC</b> </span></span>      <span style="font-family: 'Kruti Dev 010', sans-serif;font-size: 20px;">    ?kVd varxZr fgrxzkgh Jh@Jherh <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['NAME'].'</b></span>'; ?>                   firk@ifr dk uke <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['F_NAME'].'</b></span>'; ?> 
+                okMZ dzekad <?php echo '<span style="font-family: Times New Roman"><b>'.$getuser['WARD_NO'].'</b></span>'; ?> okMZ dk uke----------------------------------          ?kVd varxZr                          }kjk fuekZ.k fd;s tk jgs vkokl gsrq  vuqnku jkf'k ds Hkqxrku fd;s tkus ckcr~A
          </span>
                     </div>
                       <div style="border-top: 2px solid black; width: 100%;margin-left:10px;"></div> 
@@ -404,47 +416,47 @@ uLrh iath;u dza&
                     <table class="table-bordered" style="width:100%;font-size:15px;line-height:25px">
                 <tr>
                     <td style="border-left: 2px;padding-left:10px;"><center>fdLr</center></td>
-                    <td style=";border-left: 2px;padding-left:10px;">fuekZ.k dh fLFfr <span style="font-family: Calibri Light;font-size:20px;">(G/G+1) </span></td>
-                    <td style=";border-left: 2px;padding-left:10px;">vuqnku jkf'k<span style="font-family: Calibri Light;font-size:20px;">( </span> gtkj esa<span style="font-family: Calibri Light;font-size:20px;">) </span></td>
+                    <td style=";border-left: 2px;padding-left:10px;">fuekZ.k dh fLFfr <span style="font-family: Times New Roman;font-size:20px;">(G/G+1) </span></td>
+                    <td style=";border-left: 2px;padding-left:10px;">vuqnku jkf'k<span style="font-family: Times New Roman;font-size:20px;">( </span> gtkj esa<span style="font-family: Times New Roman;font-size:20px;">) </span></td>
 
                 </tr>
 
                  <tr>
                     <td style="border-left: 2px;padding-left:10px;"><center>izFke</center></td>
                     <td style=";border-left: 2px;padding-left:10px;">QkmaMs'ku</td>
-                    <td style=";border-left: 2px;padding-left:10px;"><span style="font-family: Calibri Light;font-size:20px;">63000.00 </span></td>
+                    <td style=";border-left: 2px;padding-left:10px;"><span style="font-family: Times New Roman;font-size:15px;">63000.00 </span></td>
 
                 </tr>
                  <tr>
                     <td style="border-left: 2px;padding-left:10px;"><center>f}rh;</center></td>
-                    <td style=";border-left: 2px;padding-left:10px;">NTtk fyaVy <span style="font-family: Calibri Light;font-size:20px;"> /</span> Hkwry Nr fuekZ.k</td> 
-                    <td style=";border-left: 2px;padding-left:10px;"><span style="font-family: Calibri Light;font-size:20px;">87000.00 </span></td>
+                    <td style=";border-left: 2px;padding-left:10px;">NTtk fyaVy <span style="font-family: Times New Roman;font-size:20px;"> /</span> Hkwry Nr fuekZ.k</td> 
+                    <td style=";border-left: 2px;padding-left:10px;"><span style="font-family: Times New Roman;font-size:15px;">87000.00 </span></td>
 
                 </tr>
                  <tr>
                     <td style="border-left: 2px;padding-left:10px;"><center>r`rh;</center></td>
-                    <td style=";border-left: 2px;padding-left:10px;">Hkwry  <span style="font-family: Calibri Light;font-size:20px;"> /</span> izFke ry Nr fuekZ.k </td>
-                    <td style=";border-left: 2px;padding-left:10px;"><span style="font-family: Calibri Light;font-size:20px;">65000.00 </span></td>
+                    <td style=";border-left: 2px;padding-left:10px;">Hkwry  <span style="font-family: Times New Roman;font-size:20px;"> /</span> izFke ry Nr fuekZ.k </td>
+                    <td style=";border-left: 2px;padding-left:10px;"><span style="font-family: Times New Roman;font-size:15px;">65000.00 </span></td>
 
                 </tr>
                  <tr>
                     <td style="border-left: 2px;padding-left:10px;"><center>prqFkZ</center></td>
                     <td style=";border-left: 2px;padding-left:10px;">dk;Z iw.kZ gksus ij</td>
-                    <td style=";border-left: 2px;padding-left:10px;"><span style="font-family: Calibri Light;font-size:20px;">35000.00 </span></td>
+                    <td style=";border-left: 2px;padding-left:10px;"><span style="font-family: Times New Roman;font-size:15px;">35000.00 </span></td>
 
                 </tr>
                  <tr>
                     <td style="border-left: 2px;padding-left:10px;" colspan = "2"><center>;ksx</center></td>
-                    <td style=";border-left: 2px;padding-left:10px;"><span style="font-family: Calibri Light;font-size:20px;">250000.00 </span></td>
+                    <td style=";border-left: 2px;padding-left:10px;"><span style="font-family: Times New Roman;font-size:15px;">250000.00 </span></td>
 
                 </tr>
        
             </table>
                    
                          
-                <div style="margin-left: 10px;font-size: 20px;"> mijksDrkuqlkj okLrqfon~ }kjk fd;s x, ft;ksVSx vuqlkj fgrxzkgh }kjk vc rd <span style="font-family: Calibri Light;font-size:20px;">(G/G+1) </span> ds <?php echo '<span style="font-family: Calibri Light;font-size:20px;">'.$_SESSION['installment_pmy2'].'</span>'; ?> Lrj rd ds fuekZ.kk/khu vkokl dk dk;Z iq.kZ dj fy;k x;k gs A ftlds vuqlkj fgrxzkgh dks fn, tkus okys Hkqxrku jkf'k dk fooj.k fuEukuqlkj gS&</div>
+                <div style="margin-left: 10px;font-size: 20px;"> mijksDrkuqlkj okLrqfon~ }kjk fd;s x, ft;ksVSx vuqlkj fgrxzkgh }kjk vc rd <span style="font-family: Times New Roman;font-size:20px;">(G/G+1) </span> ds <?php echo $payment_for; ?> Lrj rd ds fuekZ.kk/khu vkokl dk dk;Z iq.kZ dj fy;k x;k gs A ftlds vuqlkj fgrxzkgh dks fn, tkus okys Hkqxrku jkf'k dk fooj.k fuEukuqlkj gS&</div>
                 <br>
-                <div style="margin-left: 10px;font-size: 20px;">    vr% <?php echo '<span style="font-family: Calibri Light;font-size:20px">'.$_SESSION['installment_pmy2'].'</span>'; ?>    fdLr dh jkf'k : <?php
+                <div style="margin-left: 10px;font-size: 20px;">    vr% <?php echo $payment_number; ?>    fdLr dh jkf'k : <?php
 
                         if($_SESSION['amount_pmy2']==''){
 
@@ -453,7 +465,7 @@ uLrh iath;u dza&
                         else {
                             $amount_data = $_SESSION['amount_pmy2'];
                         }
-                 echo '<span style="font-family: Calibri Light">'.$amount_data.'</span>'; ?> Hkqxrku dh Lohd``fr gsrq izLrqr gSA Hkqxrku <span style="font-family: Calibri Light">SNA</span> Li'kZ ds ek/;e ls fd;k tkuk gS A</div>
+                 echo '<span style="font-family: Times New Roman">'.$amount_data.'</span>'; ?> Hkqxrku dh Lohd``fr gsrq izLrqr gSA Hkqxrku <span style="font-family: Times New Roman">SNA</span> Li'kZ ds ek/;e ls fd;k tkuk gS A</div>
                  <br>
                  <span style="float: right;font-size: 20px;"><b>
                     lh,yVhlh fo'ks"kK </b></span>

@@ -661,7 +661,6 @@ table, th, td {
          <option value="0">SELECT USER</option>
          <option value="NAMAN BHATT & ASSOCIATES">NAMAN BHATT & ASSOCIATES</option>
          <option value="AVINASH JAIN">AVINASH JAIN</option>
-         <option value="SOPAN JAIN">SOPAN JAIN</option>
          
          
        </select>
