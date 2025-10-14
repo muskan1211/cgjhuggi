@@ -34,8 +34,10 @@ $getuser = mysqli_fetch_array($data1);
      switch($installment_data)
      {
         case 'FOUNDATION/PLINTH' : $payment_number = 'izFke'; $payment_for = "QkmaMs'ku" ;break;
-        case 'GFLOOR_LINTEL' :$payment_number = 'f}rh;'; $payment_for = 'NTtk fyaVy Nr fuekZ.k' ;break;
-        case 'GFLOOR_SSLAB' : $payment_number = '`rh;';$payment_for = 'Hkwry Nr fuekZ.k ' ;break;
+        case 'LINTEL' :$payment_number = 'f}rh;'; $payment_for = 'NTtk fyaVy Nr fuekZ.k' ;break;
+        case 'SLAB' : $payment_number = '`rh;';$payment_for = 'Hkwry Nr fuekZ.k ' ;break;
+        case 'GFLOOR_LINTEL' :$payment_number = 'f}rh;'; $payment_for = 'Hkwry Nr fuekZ.k' ;break;
+        case 'GFLOOR_SSLAB' : $payment_number = '`rh;';$payment_for = 'izFke ry Nr fuekZ.k ' ;break;
         case 'FFLOOR_LINTEL' :$payment_number = 'f}rh;'; $payment_for = 'Hkwry Nr fuekZ.k' ;break;
         case 'FFLOOR_SLAB' : $payment_number = 'r`rh;';$payment_for = 'izFke ry Nr fuekZ.k' ;break;
         case 'COMPLETION' :$payment_number = 'prqFkZ'; $payment_for = 'dk;Z iw.kZ gksus ij' ;break;

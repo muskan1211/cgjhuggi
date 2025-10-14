@@ -585,6 +585,10 @@ table, th, td {
             case 'LINTEL' : amount = 87000; break;
             case 'SLAB' : amount = 65000; break;
             case 'COMPLETION' : amount = 35000; break;
+            case 'GFLOOR_LINTEL' : amount = 87000; break;
+            case 'GFLOOR_SLAB' :  amount = 65000; break;
+            case 'FFLOOR_LINTEL' : amount = 87000; break;
+            case 'FFLOOR_SLAB' :  amount = 65000; break;
           }
 
           $('#amount').val(amount);
