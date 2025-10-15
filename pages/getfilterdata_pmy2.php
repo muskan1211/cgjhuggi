@@ -8,7 +8,7 @@ $x=1;
 
 
  
-$query = "SELECT * FROM `tbl_client_pmy2` WHERE CITY='$city' AND WARD_NO=$ward AND DELETE_STATUS=0 ORDER BY NAME";
+$query = "SELECT * FROM `tbl_client_pmy2` WHERE CITY='$city' AND WARD_NO='$ward' AND DELETE_STATUS=0 ORDER BY NAME";
 
 $data = mysqli_query($conn,$query) or die(mysqli_error($conn));
 
