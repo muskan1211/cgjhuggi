@@ -326,9 +326,7 @@ fgrxzkgh o fuekZ.kk/khu vkokl dk fooj.k%&
             <td style="width: 23px;border-left: 2px;">6-</td>
             <td style="width: 265px;border-left: 2px;">Lohd`r vuqnku jkf'k </td>
             <td style="width: 398px;border-left: 2px;">: <?php 
-
-            $val = (floatval($getuser['STATE_SHARE'])+floatval($getuser['CENTRAL_GRANT']));
-            echo '<span style="font-family: Times New Roman;"><b>'.$val.'</b></span>'; ?></td>
+            echo '<span style="font-family: Times New Roman;"><b>282000</b></span>'; ?></td>
 
         </tr>
 
@@ -336,9 +334,7 @@ fgrxzkgh o fuekZ.kk/khu vkokl dk fooj.k%&
             <td style="width: 23px;border-left: 2px;">7-</td>
             <td style="width: 265px;border-left: 2px;">fgrxzkgh va'knku jkf'k </td>
             <td style="width: 398px;border-left: 2px;">: <?php 
-
-            $val = (floatval($getuser['STATE_SHARE'])+floatval($getuser['CENTRAL_GRANT']));
-            echo '<span style="font-family: Times New Roman;"><b>'.$val.'</b></span>'; ?></td>
+            echo '<span style="font-family: Times New Roman;"><b>100000</b></span>'; ?></td>
 
         </tr>
     </table><b>
