@@ -325,7 +325,7 @@ fgrxzkgh o fuekZ.kk/khu vkokl dk fooj.k%&
         <tr>
             <td style="width: 23px;border-left: 2px;">6-</td>
             <td style="width: 265px;border-left: 2px;">Lohd`r vuqnku jkf'k </td>
-            <td style="width: 398px;border-left: 2px;">: <?php 
+            <td style="width: 398px;border-left: 2px;"><?php 
             echo '<span style="font-family: Times New Roman;"><b>282000</b></span>'; ?></td>
 
         </tr>
@@ -333,7 +333,7 @@ fgrxzkgh o fuekZ.kk/khu vkokl dk fooj.k%&
          <tr>
             <td style="width: 23px;border-left: 2px;">7-</td>
             <td style="width: 265px;border-left: 2px;">fgrxzkgh va'knku jkf'k </td>
-            <td style="width: 398px;border-left: 2px;">: <?php 
+            <td style="width: 398px;border-left: 2px;"><?php 
             echo '<span style="font-family: Times New Roman;"><b>100000</b></span>'; ?></td>
 
         </tr>
