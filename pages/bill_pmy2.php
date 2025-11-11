@@ -134,7 +134,7 @@ $getuser = mysqli_fetch_array($data1);
 		<button class="btn btn-primary" onclick="myFunctioncancel();">BACK</button></center>
 	</div>
 		<div class="content" style="margin: 10px;height:1000px;">
-			<div class="header"><center><h2>AVINASH JAIN</h2>
+			<div class="header"><center><h2><?php echo $_SESSION['owner']; ?></h2>
 			<h4>CONSULTANT DURG&nbsp;&nbsp;BHILAI MUNICIPAL CORPORATION</h4>
 			<h5>REGISTERED CIVIL ENGINEER PUBLIC WORKS DEPARTMENT,WATER RESOURCES DEPARTMENT<br><br>
 STRUCTURE REPAIR REHABILATION,WATER PROOFING SYSTEMS,SELANTS FLOORINGS & MATERIALS</h5> </center></div><br><br>
