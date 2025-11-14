@@ -236,6 +236,7 @@ STRUCTURE REPAIR REHABILATION,WATER PROOFING SYSTEMS,SELANTS FLOORINGS & MATERIA
 		<div class="notesheet">
 
                  <div class="row"><span style="font-family: 'Kruti Dev 010', sans-serif;font-size: 30px;">
+                    <br>
                     <center><b>dk;kZy;] uxj ikfyd fuxe fHkykbZ] ftyk &nqxZ-</b></center>
                     <div style="border-top: 2px solid black; width: 100%;"></div>
                     <center><b><span style="font-size: 24px;">uksV'khV</span></b></center>
@@ -326,7 +327,7 @@ fgrxzkgh o fuekZ.kk/khu vkokl dk fooj.k%&
             <td style="width: 23px;border-left: 2px;">6-</td>
             <td style="width: 265px;border-left: 2px;">Lohd`r vuqnku jkf'k </td>
             <td style="width: 398px;border-left: 2px;"><?php 
-            echo '<span style="font-family: Times New Roman;"><b>282000</b></span>'; ?></td>
+            echo '<span style="font-family: Times New Roman;"><b>282850</b></span>'; ?></td>
 
         </tr>
 
@@ -349,7 +350,7 @@ fgrxzkgh o fuekZ.kk/khu vkokl dk fooj.k%&
             <table class="table-bordered" style="width:100%">
                 
                 <tr>
-                    <td colspan="2">1-  edku dk dqy ykxr jkf'k      & : 350000 </td>
+                    <td colspan="2">1-  edku dk dqy ykxr jkf'k      & : 382850 </td>
                 </tr>
                 <tr>
                     <td colspan="2"> 2- dqy vuqnku jkf'k  & : 282850</td>
