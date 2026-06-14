@@ -124,6 +124,11 @@
                 <i class="fa fa-clipboard"></i> <span>PMY 2</span> 
               </a>            
       </li>
+       <li class="treeview" id='stkcash'>
+        <a href="importExcel.php">
+                <i class="fa fa-clipboard"></i> <span>Import Excel Sheet</span>
+              </a>            
+      </li>
       
 			
            <!--  <li class="treeview" id='settings'>
