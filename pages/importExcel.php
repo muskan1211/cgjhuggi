@@ -8,7 +8,7 @@ include 'header.php';
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-           <CENTER> PRADHAN MANTRI AWAAS YOJNA</CENTER>
+           <CENTER> PRADHAN MANTRI AWAAS YOJNA 2</CENTER>
             
           </h1>
           <ol class="breadcrumb">
@@ -33,6 +33,17 @@ include 'header.php';
 <?php } ?>
           <!-- Small boxes (Stat box) -->
          <!-- ./col --><center>	
+           <div class="container mt-4">
+             <div id="alert" style="
+    padding: 12px 16px;
+    background-color: #d4edda;
+    color: #b5280f;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    margin: 10px 0;
+">
+    Only for PMY2 customers
+</div>
           <div class="container mt-4">
              <div id="alert" style="
     padding: 12px 16px;
